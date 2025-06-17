@@ -54,7 +54,7 @@ const fetchArticles = async () => {
 
   try {
     const response = await fetch(
-      `${API_URL}/rest/v1/article`,
+      `${API_URL}/rest/v1/article?order=${order}`,
       {
         headers: {
           apiKey: API_KEY,
