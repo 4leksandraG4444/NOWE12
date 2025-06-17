@@ -102,7 +102,7 @@ form.addEventListener('submit', async (e) => {
   };
 
   try {
-    const response = await fetch(API_URL, {
+    const response = await fetch(`${API_URL}/rest/v1/article`, {
       method: 'POST',
       headers: {
         apiKey: API_KEY,
